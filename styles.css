@@ -2,17 +2,28 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+
 }
-.navbar-brand{
+.navBrand h5{
     font-weight: 700;
     color: #0f84ec;
+}
+.navBrand h5 span{
+    font-weight: 700;
+    font-size: 25px;
+    color: #0a0a0a;
+}
+.nav-item a{
+    color: gray;
+    font-weight: 600;
+    margin: 0px 15px;
 }
 .homePageBox{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    padding-top: 100px;
+    padding-top: 0px;
 
 }
 .homePage{
@@ -24,6 +35,14 @@
 
 }
 .homePage h2{
+    font-weight: 700;
+    color: #0f84ec;
+    text-align: center;
+}
+.homePage p{
+    text-align: center;
+}
+.abtPageBox h2{
     font-weight: 700;
     color: #0f84ec;
 }
@@ -38,4 +57,105 @@
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+}
+#servicePage{
+    margin-top: 20px;
+}
+#servicePage h2{
+    font-weight: 700;
+    color: #0f84ec;
+    text-align: center;
+}
+.serviceCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 1px 10px #dcdcdc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+.serviceCard h4{
+    color: #363535;
+    font-weight: 700;
+    text-align: center;
+}
+#contactMe{
+    margin-top: 20px;
+}
+#contactMe h2{
+    font-weight: 700;
+    color: #0f84ec;
+    text-align: center;
+}
+#contactCard{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 4px;
+    height: 100%;
+}
+#contactCard p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #363535;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid gainsboro;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+#footerIcons{
+color: #0f84ec;
+}
+
+@media(max-width:750px){
+    .aboutPage img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    #secondHomeText{
+        font-size: 20px;
+        color: #1f1212;
+        font-weight: 700;
+    }
+    #contactCard{
+        background-color: gainsboro;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 4px;
+        height: 100%;
+        margin-top: 20px;
+    }
+    #abtText02{
+        display: none;
+    }
+    .abtPageBox h2{
+        font-weight: 700;
+        color: #0f84ec;
+        text-align: center;
+    }
+    .abtPageBox p{
+       text-align: center;
+    }
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    font-weight: 600;
+    }
 }
